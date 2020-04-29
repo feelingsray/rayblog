@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://feelingsray.github.io</id>
+    <id>https://feelingsray.github.io/rayblog/</id>
     <title>Gridea</title>
-    <updated>2020-04-29T09:52:54.900Z</updated>
+    <updated>2020-04-29T10:04:56.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://feelingsray.github.io"/>
-    <link rel="self" href="https://feelingsray.github.io/atom.xml"/>
+    <link rel="alternate" href="https://feelingsray.github.io/rayblog/"/>
+    <link rel="self" href="https://feelingsray.github.io/rayblog/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://feelingsray.github.io/images/avatar.png</logo>
-    <icon>https://feelingsray.github.io/favicon.ico</icon>
+    <logo>https://feelingsray.github.io/rayblog/images/avatar.png</logo>
+    <icon>https://feelingsray.github.io/rayblog/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://feelingsray.github.io/post/hello-gridea/</id>
-        <link href="https://feelingsray.github.io/post/hello-gridea/">
+        <id>https://feelingsray.github.io/rayblog/post/hello-gridea/</id>
+        <link href="https://feelingsray.github.io/rayblog/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
