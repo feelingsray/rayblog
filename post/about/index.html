@@ -1,130 +1,158 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
-<title>关于 | Gridea</title>
+<title>Ray的一些说明 | Ray</title>
+<meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://feelingsray.github.io/rayblog//favicon.ico?v=1588154680938">
+<link rel="shortcut icon" href="https://feelingsray.github.io/rayblog//favicon.ico?v=1588725586030">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://feelingsray.github.io/rayblog//styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://feelingsray.github.io/rayblog/">
-        <img src="https://feelingsray.github.io/rayblog//images/avatar.png?v=1588154680938" class="site-logo">
-        <h1 class="site-title">Gridea</h1>
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://feelingsray.github.io/rayblog/">
+        <img class="avatar" src="https://feelingsray.github.io/rayblog//images/avatar.png?v=1588725586030" alt="" width="32px" height="32px">
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+      <a href="https://feelingsray.github.io/rayblog/">
+        <h1 class="site-title">Ray</h1>
+      </a>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/tech" class="menu purple-link">
+            技术
+          </a>
+        
+      
+        
+          <a href="/story" class="menu purple-link">
+            故事
+          </a>
+        
+      
+        
+          <a href="/life" class="menu purple-link">
+            生活
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="site-nav">
+          <a href="/about" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Ray的一些说明</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-01-25</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://feelingsray.github.io/rayblog/about/">
+                    about
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <h2 id="说明">🏠 说明</h2>
+<p><strong>Ray Wong 一个程序员 用C#、Python和Golang Java就算了</strong><br>
+<strong>Ray Wong 居住在三线省会城市 很迷糊</strong><br>
+<strong>Ray Wong 开通这个鬼 不知道该写点儿什么鬼 能写什么鬼就写什么鬼吧</strong><br>
+<strong>如果访问 点这里</strong> <a href="https://feelingsray.github.io/rayblog/">https://feelingsray.github.io/rayblog/</a></p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p><a href="mailto:feelingswl@gmail.com">feelingswl@gmail.com</a></p>
+
+          </div>
+        </div>
+
         
+      </div>
+
       
-        
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://feelingsray.github.io/rayblog//atom.xml" target="_blank">RSS</a>
-    </div>
+    
+      
+    
   </div>
+  © 2020 Ray Wong | <a class="rss" href="https://feelingsray.github.io/rayblog//atom.xml" target="_blank">RSS</a>
 </div>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
-            
-            <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
-
-            </div>
-            
-            
-
-            
-
-          </div>
-
-        </div>
-      </div>
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -134,8 +162,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
